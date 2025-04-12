@@ -1,0 +1,4 @@
+CUDA_VISIBLE_DEVICES=1 python main.py --gpu_devices 1 --dataset prcc --dataset_root /media/data2/**/cloth-changing/dataset --dataset_filename PRCC --max_epoch 40 --save_dir ./savefile --save_checkpoint --reranking --ablation featandclo
+CUDA_VISIBLE_DEVICES=0 python main.py --gpu_devices 0  --dataset_root /media/data2/**/cloth-changing/dataset --max_epoch 40 --save_dir ./savefile --save_checkpoint --reranking --ablation featandclo
+CUDA_VISIBLE_DEVICES=1 python main.py --gpu_devices 1 --dataset vc-clothes --dataset_root /media/data2/**/cloth-changing/dataset --dataset_filename VC-Clothes --max_epoch 40 --save_dir ./savefile --save_checkpoint --reranking --ablation featandclo
+CUDA_VISIBLE_DEVICES=1 python main.py --gpu_devices 1 --dataset celeb-light --dataset_root /media/data2/**/cloth-changing/dataset --dataset_filename Celeb-reID-light --max_epoch 40 --save_dir ./savefile --save_checkpoint --reranking --ablation featandclo
